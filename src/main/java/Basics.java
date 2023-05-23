@@ -7,6 +7,8 @@
  * relevant readings for each task.
  */
 
+import java.lang.reflect.Array;
+
 /**
  *  1. In Java, no code can exist outside of a class. Unlike Python which uses
  *    functions, all code in Java uses methods.
@@ -144,6 +146,8 @@ public class Basics {
         StringBuilder ret = new StringBuilder();
 
         // Fill in the rest of the body here
+        String[] sentence = to_split.split(" ");
+        for (int word = 0; word <= 6; word ++){ ret.append(sentence[word].charAt(0));}
 
         return ret.toString();
     }
@@ -164,7 +168,7 @@ public class Basics {
      */
     public static int oddSum(int[] arr) {
         int current_sum = 0;
-
+        for ( int ind = 1; ind < arr.length & arr.length != 1; ind += 2){ current_sum += arr[ind];}
         /* TODO (Task 5): Complete this method body using a for-loop.
          *                You can find the length of an array by using the
          *                .length attribute (e.g. arr.length)
@@ -172,7 +176,7 @@ public class Basics {
          *                (e.g. arr[i] gives you the item at index i).
          */
 
-        return current_sum;
+            return current_sum;
     }
 
 
